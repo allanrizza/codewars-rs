@@ -9,11 +9,7 @@ fn duplicate_encode(word:&str) -> String {
 
     word.chars()
         .map(|c| {
-            if char_count[&c.to_ascii_lowercase()] > 1 {
-                ')'
-            } else {
-                '('
-            }
+            if char_count[&c.to_ascii_lowercase()] > 1 { ')' } else { '(' }
         }).collect()
 }
 
